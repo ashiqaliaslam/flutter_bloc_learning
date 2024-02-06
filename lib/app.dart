@@ -1,19 +1,6 @@
 import 'package:flutter/material.dart';
-import 'timer/timer.dart';
+import 'package:flutter_bloc_learning/posts/view/posts_page.dart';
 
-class App extends StatelessWidget {
-  const App({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Timer',
-      theme: ThemeData(
-        colorScheme: const ColorScheme.light(
-          primary: Color.fromRGBO(72, 74, 126, 1),
-        ),
-      ),
-      home: const TimerPage(),
-    );
-  }
+class App extends MaterialApp {
+  const App({super.key}) : super(home: const PostsPage());
 }
