@@ -1,4 +1,4 @@
-name: flutter_login
+name: flutter_weather
 description: A new Flutter project.
 version: 1.0.0+1
 publish_to: none
@@ -7,23 +7,27 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-  authentication_repository:
-    path: packages/authentication_repository
   bloc: ^8.1.0
-  equatable: ^2.0.3
+  equatable: ^2.0.5
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.1
-  formz: ^0.6.0
-  user_repository:
-    path: packages/user_repository
+  google_fonts: ^4.0.0
+  hydrated_bloc: ^9.0.0
+  json_annotation: ^4.4.0
+  path_provider: ^2.0.8
+  weather_repository:
+    path: packages/weather_repository
 
 dev_dependencies:
   bloc_test: ^9.1.0
-  flutter_lints: ^3.0.1
+  build_runner: ^2.0.0
   flutter_test:
     sdk: flutter
+  json_serializable: ^6.0.0
   mocktail: ^1.0.0
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
